@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ErkekSepeti.com</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <style>
+        .navbar {
+            background-color: #f58220;
+        }
+
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            background-color: #ffffff;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $("#search-button").click(function () {
+                $("#search-box").slideToggle("slow");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Pop-up</title>
+    <style>
+      #overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.9);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+      }
+
+      #overlay video {
+        border: 3px solid #ff7f50;
+        border-radius: 4px;
+        box-shadow: 0 4px 6px rgba(255, 127, 80, 0.3);
+      }
+    </style>
+  </head>
+  <body>
+    <video
+      id="welcome-video"
+      width="%100"
+      height="%100"
+      preload="auto"
+      style="display: block"
+      autoplay
+      playsinline
+      muted
+    >
+      <source
+        src="Faik, Safiye'yi Banabi ile şımartıyor.mp4"
+        type="video/mp4"
+      />
+      Your browser does not support the video tag.
+    </video>
+
+    <script>
+      window.addEventListener("DOMContentLoaded", function () {
+        var overlay = document.createElement("div");
+        overlay.id = "overlay";
+
+        var video = document.getElementById("welcome-video");
+        video.controls = true;
+        video.autoplay = true;
+        video.playsinline = true;
+        video.muted = true; // Başlangıçta sessiz olması için
+        video.style.display = "block";
+
+        overlay.appendChild(video);
+        document.body.appendChild(overlay);
+
+        video.addEventListener("canplay", function () {
+          video.muted = false; // Video yüklendiğinde sesi açmak için
+        });
+
+        overlay.addEventListener("click", function () {
+          video.pause();
+          overlay.style.display = "none";
+        });
+      });
+    </script>
+  </body>
+</html>
+
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand text-white" href="index.html">ErkekSepeti.com</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link text-white" href="index.html">Anasayfa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="hakkımda.html">Hakkımda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="iletisim.html">İletişim</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="ürünler.html">Ürünler</a>
+                        </li>
+                        
+
+                        
+                    </ul>
+                    <a href="sepetim.html"><i class="fas fa-shopping-cart"></i></a>
+
+                </div>
+                <button id="search-button" class="btn btn-outline-light">Arama</button>
+            </div>
+        </nav>
+        <div id="search-box" class="container mt-3" style="display:none;">
+            <input type="text" class="form-control" placeholder="Ürün ara...">
+        </div>
+    </header>
+
+    <main>
+        <div class="container mt-5">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="149146_o7b9b.gif" class="d-block w-100" alt="Kaslı Erkek 1">
+                    </div>
+                    <div class="carousel-item

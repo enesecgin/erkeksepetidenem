@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ErkekSepeti.com</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ürünler Sayfası</title>
+    <style>
+      .text-container {
+        border: 2px solid #f58220;
+        padding: 20px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin: 0 auto;
+        width: 80%;
+      }
+      .navbar {
+        background-color: #f58220;
+      }
+
+      .carousel-inner img {
+        width: 100%;
+        height: 100%;
+      }
+
+      body {
+        background-color: #ffffff;
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        max-width: 800px;
+        margin: auto;
+        padding: 20px;
+      }
+      h1 {
+        color: #f58220;
+        text-align: center;
+      }
+      .product {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+      }
+      .product img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+        border: 2px solid #f58220;
+        border-radius: 10px;
+      }
+      .product h2 {
+        color: #f58220;
+        margin-bottom: 10px;
+        font-size: 24px;
+      }
+      .product p {
+        margin-bottom: 10px;
+        font-size: 16px;
+        line-height: 1.5;
+      }
+      .button {
+        background-color: #f58220;
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 18px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      .button:hover {
+        background-color: #ffffff;
+        color: #f58220;
+      }
+    </style>
+    <script>
+      $(document).ready(function () {
+        $("#search-button").click(function () {
+          $("#search-box").slideToggle("slow");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand text-white" href="index.html"
+            >ErkekSepeti.com</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link text-white" href="index.html">Anasayfa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="hakkımda.html">Hakkımda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="iletisim.html">İletişim</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="ürünler.html">Ürünler</a>
+              </li>
+            </ul>
+            <a href="sepetim.html"><i class="fas fa-shopping-cart"></i></a>
+          </div>
+          <button id="search-button" class="btn btn-outline-light">
+            Arama
+          </button>
+        </div>
+      </nav>
+      <div id="search-box" class="container mt-3" style="display: none">
+        <input type="text" class="form-control" placeholder="Ürün ara..." />
+      </div>
+    </header>
+    <div class="container">
+      <h1>Ürünlerimiz</h1>
+      <div class="product">
+        <img src="WhatsApp Görsel 2023-04-01 saat 05.41.07.jpg" alt="Ürün 1" />
+        <h2 style="text-align: center; font-weight: bold">Ürün 1</h2>
+        <div
+          style="border: 2px solid #f58220; padding: 10px"
+          class="text-container"
+        >
+          <p>
+            Berkan Uyar.. Klasik bir İstanbul beyefendisi..Oturmasını kalkmasını
+            bilen ağır başlı sakin ve beladan uzak bir beyefendi arıyorsanız
+            Berkan Uyar tam size göre.Sizine müzeleri gezebilcek,tiyatro
+            oyunlara gelebilcek Türk Halk Musikisi dinleyebilcek bir bey
+            arıyorsanız doğru aday kesinlikle Berkan Uyar. Humanist
+            yapısıyla,hayvan sevgisiyle ve uçsuz bucaksız yüreğiyle size harika
+            bir etkinlik gecesi partneri deneyimi sunuyor. <p style="font-size: larger;">Teknik Özellikler:</p> <ul><li>Boy:
+              1.74</li>
+            <li>Kilo:65 </li>
+          <li>Fizik:Makina</li>
+        <li>Ten Rengi:Esmer</li></ul>  
+          </p>
+        </div>
+        <button class="button">Satın Al</button>
+      </div>
+      <div class="product">
+        <img
+          src="Snapinsta.app_270042940_126845329803833_2342400035132132177_n_1080.jpg"
+          alt="Ürün 2"
+        />
+        <h2 style="text-align: center; font-weight: bold">Ürün 2</h2>
+        <div
+          style="border: 2px solid #f58220; padding: 10px"
+          class="text-container"
+        >
+          <p>
+            Kıvanç Tatlıtuğ.. Halk arasında malesef 3cm olarak ismi çıkmış
+            olsada hala kızların tercih ettiği bir ürün.Yakışıklı karizmatık vs.
+            pekte anlatmaya gerek yok ama bamya sevenler için iyi bir
+            tercih.Düğünlere kınalara ve akraba yoğunluklu etkinliklere bununla
+            gidip akraba çatlatabilirsiniz. Ve ayrıca bir günlüğünede olsa
+            Kıvanç Tatlıtuğ ile evlendik tweeti atabilirsiniz.<p style="font-size: larger;">Teknik Özellikler:</p> <ul><li>Boy:
+              1.87</li>
+            <li>Kilo:75 </li>
+          <li>Fizik:İyi</li>
+        <li>Ten rengi:Sarışın</li></ul>  
+          </p>
+        </div>
+        <button class="button">Satın Al</button>
+      </div>
+      <div class="product">
+        <img src="WhatsApp Görsel 2023-04-01 saat 06.14.49.jpg" alt="Ürün 3" />
+        <h2 style="text-align: center; font-weight: bold">Ürün 3</h2>
+        <div
+          style="border: 2px solid #f58220; padding: 10px"
+          class="text-container"
+        >
+          <p>
+            Enes Seçgin..Esprilerini Cem Yılmaza satsa miyoner olcak o
+            çocuk..Arkadaşlarınız sevgilileriyle okeye gitti ve sizide
+            çağırıyolar diyelim ve hem ortam çok sıkıcı hemde artık yalnız
+            görünmek istemiyormusunuz ozaman doğru tercih kesinlikle bu
+            çocuk.Okeyde taş çalar hile ve manipülasyon yapar.Birazcık kolpa
+            birazcık gerçek ve birazcıkda dramalı hayat hikayeleriyle sizi
+            güldürür.Başkada bi özelliği yok. <p style="font-size: larger;">Teknik Özellikler:</p> <ul><li>Boy:Nerdeyse
+              1.90</li>
+            <li>Kilo:95e indi </li>
+          <li>Fizik:Hallice</li>
+        <li>Ten Rengi:Kumral</li></ul>    
+          </p>
+        </div>
+        <button class="button">Satın Al</button>
+      </div>
+    </div>
+  </body>
+</html>
